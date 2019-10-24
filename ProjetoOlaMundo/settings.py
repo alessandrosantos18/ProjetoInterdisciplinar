@@ -11,10 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-<<<<<<< HEAD
-from django.conf.global_settings import STATIC_ROOT
-=======
->>>>>>> ff850b91dc4dae3e7a65abac0634be389a97b433
+from django.conf.global_settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,15 +26,11 @@ SECRET_KEY = '*@8jf67))c=4td8^-qludr=82l(z^myee$a&$g83+_torq+6v9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
+
 ALLOWED_HOSTS = [
     'localhost',
     'mapjobs.herokuapp.com'
 ]
-=======
-ALLOWED_HOSTS = []
->>>>>>> ff850b91dc4dae3e7a65abac0634be389a97b433
-
 
 # Application definition
 
