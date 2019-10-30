@@ -1,4 +1,8 @@
 from django.db import models
+from django.template.defaultfilters import date
+from django.utils.formats import date_format
+from openshot_qt.classes.info import DATE
+
 
 
 class Paciente(models.Model):
@@ -38,5 +42,22 @@ class Paciente(models.Model):
         null=False,
         blank=False
     )
+    
+objetos = models.Manager
+
+class exercicio_fisico (models.Model):
+    
+    nome_exercicio = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    data_exercicio = models.DateField(
+        DATE,
+        null=False,
+        blank=False
+    )
+    
+  
     
 objetos = models.Manager
