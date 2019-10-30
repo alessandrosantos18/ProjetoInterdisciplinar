@@ -33,4 +33,10 @@ class Paciente(models.Model):
         blank=False
     )
     
+    email = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    
 objetos = models.Manager
