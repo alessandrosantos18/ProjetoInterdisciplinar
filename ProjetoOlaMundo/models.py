@@ -1,6 +1,7 @@
 from django.db import models
 
-class Funcionario(models.Model):
+
+class Paciente(models.Model):
     
     nome = models.CharField(
         max_length=255,
@@ -20,15 +21,14 @@ class Funcionario(models.Model):
         blank=False
     )
     
-    tempo_de_servico = models.IntegerField(
-        default=0,
+    celular = models.CharField(
+        max_length=11,
         null=False,
         blank=False
     )
     
-    remuneracao = models.DecimalField(
-        max_digits=8,
-        decimal_places=2,
+    TelefoneFixo = models.CharField(
+        max_length=8,
         null=False,
         blank=False
     )
