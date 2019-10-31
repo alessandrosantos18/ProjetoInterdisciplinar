@@ -61,3 +61,77 @@ class exercicio_fisico (models.Model):
   
     
 objetos = models.Manager
+
+objetos = models.Manager
+
+class Remedio (models.Model):
+    
+    nome_remedio = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    hora_evento = models.DateField(
+        DATE,
+        null=False,
+        blank=False
+    )
+    
+  
+    
+objetos = models.Manager
+
+class Cuidador (models.Model):
+    
+    nome = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    data_nascimento = models.DateField(
+        DATE,
+        null=False,
+        blank=False
+    )
+    sobrenome = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    
+    cpf = models.CharField(
+        max_length=14,
+        null=False,
+        blank=False
+    )
+    email = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+     
+objetos = models.Manager
+
+class Agenda (models.Model):
+    
+    nome = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    data_evento = models.DateField(
+        DATE,
+        null=False,
+        blank=False
+    )
+    
+    descricao = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
+    
+  
+    
+objetos = models.Manager
+

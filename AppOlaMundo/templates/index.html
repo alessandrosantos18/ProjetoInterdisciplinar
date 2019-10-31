@@ -6,11 +6,42 @@
 
 <!-- Bloco de conteúdo da página -->
 {% block conteudo %}
-	<h3>Cadastrar Funcionário</h3>
-	<p>Cadastre aqui um novo funcionário.</p>
-	<p><a href="">Novo Funcionário</a></p>
+	<h4>Usuario</h4>
 	
-	<h3>Listar Funcionário</h3>
-	<p>Veja aqui a lista de funcionários cadastrados.</p>
-	<p><a href="">Vá para a lista</a></p>
+	<form method="post">
+	<!-- Não esqueça deste comando -->
+	{% csrf_token %}
+	<label>Nome:</label>
+	{{ form.nome_Paciente }}
+	<br>
+	
+	<label>Sobrenome:</label>
+	{{ form.sobrenome }}
+	<br>
+	
+	<label>CPF:</label>
+	{{ form.cpf }}
+	<br>
+	
+	<label>Celular:</label>
+	{{ form.celular }}
+	<br>
+	
+	<label>Telefone Fixo:</label>
+	{{ form.telefone_fixo }}
+	<br>
+	
+	<label>Email:</label>
+	{{ form.email }}
+	<br>
+	
+	<label>Data de Nascimento:</label>
+	{{ form.data_nascimento }}
+	<br>
+	
+	<button>CADASTRAR</button>
+	</form>
+	
+	
+	
 {% endblock %}
