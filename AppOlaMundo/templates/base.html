@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>	
-	<head>
-		<meta charset="utf-8">
-		<title>
-			{% block title %}Sistema Gerenciador de Idosos{% endblock %}
-		</title>	
-			
-	</head>
+<html>
+	{% load static %}
+<head>
+	<meta charset="utf-8">
+	<title>
+		{% block title %} sistema gerenciador de funcionarios{% endblock %}
+	</title>
 	
-	<body>
-		<div class="container">
-		<h2 style="color: #dedede;">Sistema Gerenciador de Funcionários</h2>
-		<p><a href="{% url 'index' %}">Página inicial</a></p>
+	<link rel="stylesheet" href="{% static 'css/estilo.css'}">
+</head>
+<body>
+	<h2>Sistema gerencioador de funcionario</</h2>
+	<p><a href="{% url 'index' %}">Página inicial</a></p>
 	
-		<!-- Bloco de conteúdo -->
-		{% block conteudo %}{% endblock %}	
-		
-		<p>SGF - 2019 Copyright</p>	
-		
-		
-		</div>
-	</body>
+	<!-- Bloco de conteudo -->
+	
+	{% block conteudo %}{% endblock %}
+
+
+
+</body>
 </html>
