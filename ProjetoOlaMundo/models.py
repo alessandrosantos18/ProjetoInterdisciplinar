@@ -1,6 +1,5 @@
 from django.db import models
-from django.template.defaultfilters import date
-from django.utils.formats import date_format
+
 from openshot_qt.classes.info import DATE
 
 
