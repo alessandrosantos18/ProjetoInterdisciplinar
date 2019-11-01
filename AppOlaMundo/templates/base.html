@@ -4,12 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>
-		{% block title %} sistema gerenciador de funcionarios{% endblock %}
+		{% block title %} sistema gerenciador de Idosos{% endblock %}
 	</title>
 	
 	<link rel="stylesheet" href="{% static 'css/estilo.css'}">
 </head>
 <body>
+	<div class="container">
 	<h2>Sistema gerencioador de funcionario</</h2>
 	<p><a href="{% url 'index' %}">Página inicial</a></p>
 	
@@ -18,6 +19,6 @@
 	{% block conteudo %}{% endblock %}
 
 
-
+</div>
 </body>
 </html>
