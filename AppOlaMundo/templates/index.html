@@ -6,12 +6,13 @@
 
 <!-- Bloco de conteudo da pagina -->
 {% block conteudo %}
-	<h3>cadasatrar funcionarios!</h3>
-	<p>cadastre aqui novo funcionario</p>
-	<p><a href="">Novo funcionario</a></p>
+
+	<form method="post">
+	<!-- Não esqueça deste comando -->
+	{% csrf_token %}
+	<label>Nome:</label>
+	{{ form.nome }}
+	<br>
 	
-	<h3>listar funcionarios!</h3>
-	<p>Veja aqui a lista de funcionarios cadastrados.</p>
-	<p><a href="">Vá para lista</a></p>
-	
+	</form>
 {%endblock%}
