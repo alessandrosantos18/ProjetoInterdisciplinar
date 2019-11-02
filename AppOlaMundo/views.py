@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 from ProjetoOlaMundo.models import Paciente
-from django.views.generic.edit import CreateView
+from django.views.generic import CreateView
 
 class Index(TemplateView):
     template_name ="index.html"
